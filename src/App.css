@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.sliderWrapper {
+  padding: 50px;
+}
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+.slider > * {
+  flex: 0 0 auto;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+.btnHolder {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btnHolder > * {
+  width: 100px;
+  height: 50px;
+  background-color: #282c34;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
